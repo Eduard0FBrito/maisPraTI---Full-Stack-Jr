@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Página com Menu e Cartões usando Flexbox</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Fundo escuro */
+            color: #f0f0f0; /* Texto claro */
+        }
+
+        /* Estilos da Barra de Navegação (Menu) */
+        .navbar {
+            display: flex; /* Torna a barra de navegação um container flex */
+            justify-content: space-between; /* Distribui o espaço entre o logo e os links */
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+            background-color: #333;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar img {
+            width: 100px; /* Tamanho do logo */
+            height: auto;
+            /* margin-right: 20px; Este não é estritamente necessário com space-between, mas pode ajudar a manter o espaçamento consistente */
+        }
+
+        .navbar-links {
+            display: flex; /* Torna o container de links um container flex */
+            list-style: none; /* Remove os marcadores de lista */
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 25px; /* Espaço entre os links */
+            transition: color 0.3s ease; /* Transição suave na mudança de cor */
+        }
+
+        .navbar-links a:hover {
+            color: #007bff; /* Cor ao passar o mouse */
+        }
+
+        /* Estilos da Seção de Cartões */
+        .cards {
+            display: flex; /* Torna a seção de cartões um container flex */
+            justify-content: center; /* Centraliza os cartões horizontalmente */
+            flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha em telas menores */
+            padding: 30px;
+            gap: 20px; /* Espaço entre os cartões (moderno e eficiente) */
+        }
+
+        .card {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            width: 300px; /* Largura fixa para cada cartão */
+            flex-shrink: 0; /* Impede que os cartões encolham muito */
+            transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+        }
+
+        .card img {
+            width: 100%; /* Imagem preenche a largura do cartão */
+            max-width: 250px; /* Limita o tamanho máximo da imagem dentro do cartão */
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #007bff;
+            font-size: 24px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="..\assets\chc logo.png" alt="Logo Crunchroll">
+        <div class="navbar-links">
+            <a href="#">Cadastro</a>
+            <a href="#">Premium</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+
+    <section class="cards">
+        <div class="card">
+            <img src="..\assets\naruto.jpg" alt="Logo do anime Naruto">
+            <h2>Naruto</h2>
+        </div>
+        <div class="card">
+            <img src="..\assets\One Piece.jpg" alt="Logo do anime One Piece">
+            <h2>One Piece</h2>
+        </div>
+        <div class="card">
+            <img src="..\assets\solo leveling.jpg" alt="Logo do anime Solo Leveling">
+            <h2>Solo Leveling</h2>
+        </div>
+    </section>
+
+</body>
+</html>
