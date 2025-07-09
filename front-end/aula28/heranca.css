@@ -1,0 +1,26 @@
+.pai {
+    color: green;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+p {
+    border: inherit;
+    margin: inherit;
+}
+
+article p {
+    color: blue;
+}
+
+article > a{
+    color: green;
+}
+
+h1 ~ p {
+    color: violet;
+}
+
+h1 + p {
+    color: red;
+}
