@@ -1,0 +1,30 @@
+header {
+    background-color: powderblue;
+}
+
+main {
+    background-color: rgb(197, 211, 211);
+}
+
+footer {
+    background-color: rgb(150, 176, 234);
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.destaque {
+    font-style: italic;
+    background-color: brown;
+}
+
+#importante {
+    border-top: 2px solid black;
+}
