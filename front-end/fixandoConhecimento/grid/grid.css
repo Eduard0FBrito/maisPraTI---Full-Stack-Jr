@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #52525b;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os containers */
+}
+
+/* Aplica altura e largura apenas aos DIVS que são ITENS do Grid, não aos containers em si */
+.container > div {
+    height: 200px;
+    width: 200px;
+}
+
+.caixa > div {
+    height: 200px; /* Mantém a altura dos itens da caixa */
+    /* REMOVA qualquer 'width' ou 'max-width' daqui para os itens da .caixa */
+    /* Deixe o Grid controlar a largura dos itens da .caixa */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px; /* Colunas de 200px cada */
+    gap: 10px;
+}
+
+.caixa {
+    display: grid;
+    grid-template-areas:
+    "black black"
+    "white white"
+    "gray brown"
+    ;
+    /* Para que o preto e o branco "cubram toda a área",
+       as colunas devem ser definidas com as mesmas larguras dos itens individuais,
+       assim, eles se estenderão pelos dois. */
+    grid-template-columns: 200px 200px; /* Colunas de 200px cada, como no .container */
+    gap: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+    grid-area: black;
+}
+
+.white {
+    background-color: white;
+    grid-area: white;
+}
+
+.gray {
+    background-color: gray;
+    grid-area: gray;
+}
+
+.brown {
+    background-color: brown;
+    grid-area: brown;
+}
