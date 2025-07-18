@@ -78,11 +78,31 @@ article > p {
     }
 
     menu {
-        display: block;
+        display: block !important;
+        position: static;
+        width: auto;
+        background-color: transparent; 
     }
 
-    menu > ul > li {
+    menu > ul {
         display: grid;
-        grid-template-columns: repeat(5,fr);
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        gap: 5px; 
+    }
+
+    menu > ul > li > a {
+        border: none;
+        border-radius: 5px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    menu > ul > li > a:hover {
+        background-color: rgb(63, 63, 63); 
+    }
+
+    main {
+        width: 70%;
     }
 }
