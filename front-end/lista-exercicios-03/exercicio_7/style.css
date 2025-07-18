@@ -20,7 +20,7 @@ header > h1 {
     text-align: center;
 }
 
-span#burguer {
+#burguer {
     background-color: rgb(63, 63, 63);
     display: block;
     text-align: center;
@@ -70,4 +70,19 @@ article > p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+}
+
+@media screen and (min-width: 600px){
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: grid;
+        grid-template-columns: repeat(5,fr);
+    }
 }
