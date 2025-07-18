@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+    <header>
+        <h1>Meu site</h2>
+        <span id ="burguer" class="material-symbols-outlined" onclick="cliqueMenu()">menu</span>
+        <menu id="burguerMenu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Informações</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa asperiores, totam molestias cum nobis ipsam reiciendis minus sequi repellendus animi laborum facere quis doloremque magni adipisci aspernatur tempore ullam eaque. Harum perferendis repudiandae veniam atque itaque natus autem sapiente nisi delectus id dolorum vero dolorem nam totam asperiores praesentium ut fugiat, adipisci fuga? Commodi est recusandae magni cupiditate eveniet. Omnis impedit inventore labore, reprehenderit molestias dolor ea excepturi modi aperiam, vero ad, soluta ipsam. Maxime cumque illo amet eveniet velit obcaecati veritatis repellendus quas dolorum! Nostrum repellat laborum tempore alias nisi ut quam. Exercitationem quis aliquid, dolores obcaecati aut doloribus!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, obcaecati! Alias quos, quisquam sequi officia maxime fugiat fugit temporibus placeat dolorum praesentium velit est sed dolorem dicta! Recusandae mollitia amet, quas ipsa nam exercitationem dicta accusamus molestias iusto voluptatum esse perspiciatis dolorum vel excepturi distinctio possimus maiores? Sed, minima commodi!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cum doloribus voluptatem voluptatum adipisci consequuntur provident dolorem cupiditate, ipsam rem exercitationem deleniti nisi hic quibusdam perferendis officiis assumenda vitae unde veniam velit veritatis, odit placeat impedit. Aliquam natus facilis voluptatem ducimus voluptatum deserunt autem consequuntur itaque quisquam maiores nobis perferendis magni corporis laudantium vitae, ratione velit eaque a et vel tempore? Dolor culpa, nemo sunt quisquam placeat nostrum labore alias reiciendis? Doloribus suscipit natus sit dignissimos eum incidunt blanditiis optio.
+            </p>
+        </article>
+    </main>
+    <script>
+        function cliqueMenu() {
+            if (burguerMenu.style.display == 'block'){
+                burguerMenu.style.display = 'none'
+            } else {
+                burguerMenu.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>
