@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="apps.js" defer></script>
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Lista de Compras</h1>
+        <div id="topoLista">
+            <form id="filtros">
+                <h3>Filtrar: </h3>
+                <label>
+                    <input type="checkbox" id="filtroComprados" class="filtroExclusivo" name="filtroComprados"> Comprados
+                </label>
+                <label>
+                    <input type="checkbox" id="filtroPendentes" class="filtroExclusivo" name="filtroPendentes"> Pendentes
+                </label>
+            </form>
+
+            <form id="ordenarPor">
+                <h3>Ordernar por: </h3>
+                <label>
+                    <input type="checkbox" id="ordemStatus" class="ordemExclusiva" name="ordemStatus"> Status
+                </label>
+                <label>
+                    <input type="checkbox" id="ordemAlfabetica" class="ordemExclusiva" name="ordemAlfabetica"> Alfabetica
+                </label>
+            </form>
+        </div>
+        <form id="formAdicionar">
+            <input id="inputItem" type="text" placeholder="Adicione um item..." required>
+            <button id="btnAdicionar" type="submit">Adicionar</button>
+            <button id="btnLimpar">Limpar Lista</button>
+        </form>
+        <ul id="listaItens"></ul>
+    <div id="exibirTotalItens">
+        <span id="totalItens">Total: 0</span>
+        <span id="itensPendentes">Pendentes: 0</span>
+        <span id="itensComprados">Comprados: 0</span>
+    </div>
+    </div>
+    
+</body>
+</html>
