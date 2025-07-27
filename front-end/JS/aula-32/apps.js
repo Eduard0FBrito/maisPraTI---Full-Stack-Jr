@@ -103,6 +103,7 @@ formAdicionar.addEventListener('submit', (evento) => {
 
     itens.push([itemTexto, false])
     salvarDados()
+    contador +=1 
     inputItem.value = ''
     renderizarLista()
 })
